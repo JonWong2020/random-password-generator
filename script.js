@@ -1,6 +1,10 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+function randomInt(min, max) {
+  return Math.floor(Math.random()*(max-min) + min)
+}
+
 // function w/prompts for password criteria
 function generatePassword() {
   var userInput = window.prompt("How long would you like your password to be?");
@@ -8,7 +12,7 @@ function generatePassword() {
   var passwordLenth = parseInt(userInput)
 
   if (isNaN(passwordLenth)) {
-    window.alert("Please enter a nubmer.")
+    window.alert("Please enter a number.")
     return
   }
 
@@ -26,14 +30,36 @@ function generatePassword() {
 // variables for symbols, numbers and letters
   var symbols = ["!", "U+0022", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "U+005C", "]", "^", "_", "`", "{", "|", "}", "~"];
   var lowerCase = "abcdefghijklmnopqrstuvwxyz".split("");
-  var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+  var upperCase = [];
   var numbers = "0123456789".split("");
+
+  var criteriaArray = []
 
   for (var i = 0; i < lowerCase.length; i++) {
     upperCase[i] = lowerCase[i].toUpperCase()
   }
 
+  if (userSymbols === true) {
+    criteriaArray.push(symbols)
+  }
 
+  if (userLowercase === true) {
+    criteriaArray.push(lowerCase)
+  }
+
+  if (userUppercase === true) {
+    criteriaArray.push(upperCase)
+  }
+
+  if (userNumbers === true) {
+    criteriaArray.push(numbers)
+  }
+
+  var userPassword = ""
+
+  for (var i = 0; i <passwordLenth; i++) {
+    Math.random()
+  }
 
 }
 // Write password to the #password input
