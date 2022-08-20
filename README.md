@@ -12,7 +12,7 @@ Repo:  https://github.com/JonWong2020/random-password-generator
 
 ## Screenshot
 
-
+![randompassgen](https://user-images.githubusercontent.com/110364895/185730677-1ddba6e6-6cb3-4094-be39-486e31496002.gif)
 
 ## Credits
 
