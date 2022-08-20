@@ -6,7 +6,7 @@ A project to create a random password generator through use of JavaScript.  The 
 
 ## Links
 
-Live Site:  
+Live Site:  https://jonwong2020.github.io/random-password-generator/
 
 Repo:  https://github.com/JonWong2020/random-password-generator
 
