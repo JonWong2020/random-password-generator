@@ -5,6 +5,10 @@ function randomInt(min, max) {
   return Math.floor(Math.random()*(max-min) + min)
 }
 
+function getRandomChar(list) {
+  return list[randomInt(0, list.length - 1)]
+}
+
 // function w/prompts for password criteria
 function generatePassword() {
   var userInput = window.prompt("How long would you like your password to be?");
@@ -58,7 +62,9 @@ function generatePassword() {
   var userPassword = ""
 
   for (var i = 0; i <passwordLenth; i++) {
-    Math.random()
+    var randomList = getRandomChar(criteriaArray);
+    var randomChar = getRandomChar(randomList);
+    console.log(randomChar)
   }
 
 }
