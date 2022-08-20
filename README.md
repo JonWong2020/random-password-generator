@@ -17,7 +17,7 @@ Repo:  https://github.com/JonWong2020/random-password-generator
 ## Credits
 
 * W3 Schools and MDN Webdocs for references on use of various JS elements and attributes.
-*Jeremiah Torbit for allowing me to view his process of setting up the loop to pull from the list variables.
+* Jeremiah Torbit for allowing me to view his process of setting up the loop to pull from the list variables.
 
 ## License
 
