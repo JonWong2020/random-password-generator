@@ -1,10 +1,12 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+// function to obtain random number
 function randomInt(min, max) {
   return Math.floor(Math.random()*(max-min) + min)
 }
 
+// function to obtain a random character from the random number that was generated
 function getRandomChar(list) {
   return list[randomInt(0, list.length - 1)]
 }
@@ -32,13 +34,14 @@ function generatePassword() {
   var userNumbers = window.confirm("Would you like numbers?");
  
 // variables for symbols, numbers and letters
-  var symbols = ["!", "U+0022", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "U+005C", "]", "^", "_", "`", "{", "|", "}", "~"];
+  var symbols = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "]", "^", "_", "`", "{", "|", "}", "~"];
   var lowerCase = "abcdefghijklmnopqrstuvwxyz".split("");
   var upperCase = [];
   var numbers = "0123456789".split("");
 
   var criteriaArray = [];
 
+  // Loop to pull from large array
   for (var i = 0; i < lowerCase.length; i++) {
     upperCase[i] = lowerCase[i].toUpperCase();
   }
@@ -73,6 +76,7 @@ function generatePassword() {
   
   return userPassword;
 }
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
